@@ -12,8 +12,8 @@
         android:id="@+id/weightET4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="14dp"
-        android:layout_marginEnd="55dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="56dp"
         android:ems="10"
         android:inputType="text"
         android:textSize="16sp"
@@ -24,8 +24,8 @@
         android:id="@+id/weightET3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="14dp"
-        android:layout_marginEnd="55dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="56dp"
         android:ems="10"
         android:inputType="text"
         android:textSize="16sp"
@@ -34,23 +34,23 @@
 
     <TextView
         android:id="@+id/attackTV2"
-        android:layout_width="48dp"
-        android:layout_height="14dp"
+        android:layout_width="68dp"
+        android:layout_height="26dp"
         android:layout_marginStart="52dp"
         android:layout_marginTop="40dp"
         android:text="Defense"
-        android:textSize="11sp"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/attackTV" />
 
     <TextView
         android:id="@+id/attackTV"
         android:layout_width="48dp"
-        android:layout_height="14dp"
+        android:layout_height="28dp"
         android:layout_marginStart="52dp"
         android:layout_marginTop="40dp"
         android:text="Attack"
-        android:textSize="11sp"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/hpTV" />
 
@@ -62,7 +62,7 @@
         android:layout_marginTop="18dp"
         android:text="HP"
         android:textAlignment="viewStart"
-        android:textSize="11sp"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/baseTV" />
 
@@ -70,7 +70,7 @@
         android:id="@+id/genderET"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="14dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="57dp"
         android:ems="10"
         android:inputType="text"
@@ -82,7 +82,7 @@
         android:id="@+id/heightET"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="14dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="57dp"
         android:ems="10"
         android:inputType="text"
@@ -94,7 +94,7 @@
         android:id="@+id/weightET"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="14dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="57dp"
         android:ems="10"
         android:inputType="text"
@@ -106,8 +106,8 @@
         android:id="@+id/weightET2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
-        android:layout_marginEnd="55dp"
+        android:layout_marginTop="81dp"
+        android:layout_marginEnd="56dp"
         android:ems="10"
         android:inputType="text"
         android:textSize="16sp"
@@ -118,7 +118,7 @@
         android:id="@+id/speicesET"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="14dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="57dp"
         android:ems="10"
         android:inputType="text"
@@ -134,7 +134,7 @@
         android:layout_marginTop="40dp"
         android:text="Gender"
         android:textAlignment="viewStart"
-        android:textSize="12sp"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/speicesTV" />
 
@@ -146,7 +146,7 @@
         android:layout_marginTop="40dp"
         android:text="Height"
         android:textAlignment="viewStart"
-        android:textSize="12sp"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/genderTV" />
 
@@ -158,7 +158,7 @@
         android:layout_marginTop="40dp"
         android:text="Weight"
         android:textAlignment="viewStart"
-        android:textSize="12sp"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/heightTV" />
 
@@ -170,7 +170,7 @@
         android:layout_marginTop="40dp"
         android:text="Speices "
         android:textAlignment="viewStart"
-        android:textSize="12sp"
+        android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nameTV" />
 
@@ -182,7 +182,7 @@
         android:layout_marginTop="40dp"
         android:text="Name"
         android:textAlignment="viewStart"
-        android:textSize="12sp"
+        android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/numberTV" />
 
@@ -218,7 +218,7 @@
         android:layout_marginTop="62dp"
         android:text="National Number"
         android:textAlignment="viewStart"
-        android:textSize="12sp"
+        android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pokeHeader" />
 
@@ -226,8 +226,8 @@
         android:id="@+id/numberET"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="18dp"
-        android:layout_marginEnd="57dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="56dp"
         android:ems="10"
         android:inputType="text"
         android:textSize="16sp"
@@ -238,7 +238,7 @@
         android:id="@+id/nameET"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="14dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="57dp"
         android:ems="10"
         android:inputType="text"
@@ -251,12 +251,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="52dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="333dp"
         android:text="Level"
         android:textAlignment="viewStart"
-        android:textSize="11sp"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/weightTV" />
 
@@ -264,8 +265,8 @@
         android:id="@+id/levelSpinner"
         android:layout_width="160dp"
         android:layout_height="18dp"
-        android:layout_marginTop="26dp"
-        android:layout_marginEnd="57dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="56dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/weightET" />
 
@@ -273,8 +274,8 @@
         android:id="@+id/baseTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="44dp"
         android:text="Base stats"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -285,16 +286,20 @@
         android:id="@+id/saveButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="44dp"
         android:text="Save"
-        tools:layout_editor_absoluteX="279dp"
-        tools:layout_editor_absoluteY="677dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weightET4" />
 
     <Button
         android:id="@+id/resetButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="12dp"
         android:text="Reset"
-        tools:layout_editor_absoluteX="179dp"
-        tools:layout_editor_absoluteY="677dp" />
+        app:layout_constraintEnd_toStartOf="@+id/saveButton"
+        app:layout_constraintTop_toBottomOf="@+id/weightET4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
