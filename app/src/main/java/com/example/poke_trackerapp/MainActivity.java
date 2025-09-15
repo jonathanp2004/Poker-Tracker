@@ -106,8 +106,8 @@ public class MainActivity extends AppCompatActivity {
         numberET.setText("777");
         nameET.setText("Pikachu");
         speciesEt.setText("Mouse Pokemon");
-        heightET.setText("0.4 m");
-        weightET.setText("6.0 kg");
+        heightET.setText("0.4");
+        weightET.setText("6.0");
         hpET.setText("35");
         attackET.setText("55");
         defenseET.setText("40");
@@ -190,4 +190,20 @@ public class MainActivity extends AppCompatActivity {
         defenseTV.setTextColor(normalColor);
         levelTV.setTextColor(normalColor);
     }
+    private Integer readInt(EditText et)
+    {
+        String s = et.getText().toString().trim();
+        if (s.isEmpty()) return null;
+        try{return Integer.parseInt(s);}
+        catch (NumberFormatException e) {return null;}
+    }
+
+    private Double readDouble(EditText et)
+    {
+        String s = et.getText().toString().trim();
+        if (s.isEmpty()) return null;
+        try{return Double.parseDouble(s);}
+        catch (NumberFormatException e) {return null;}
+    }
+
 }
