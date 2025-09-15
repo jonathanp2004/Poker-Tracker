@@ -134,4 +134,17 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(this, "Stored in database", Toast.LENGTH_SHORT).show();
     }
 
+    private void clearErrors()
+    {
+        numberTV.setTextColor(normalColor);
+        nameTV.setTextColor(normalColor);
+        speciesTV.setTextColor(normalColor);
+        genderTV.setTextColor(normalColor);
+        heightTV.setTextColor(normalColor);
+        weightTV.setTextColor(normalColor);
+        hpTV.setTextColor(normalColor);
+        attackTV.setTextColor(normalColor);
+        defenseTV.setTextColor(normalColor);
+        levelTV.setTextColor(normalColor);
+    }
 }
