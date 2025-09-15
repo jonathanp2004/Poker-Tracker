@@ -1,6 +1,8 @@
 package com.example.poke_trackerapp;
 
+import android.graphics.Color;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -61,6 +63,8 @@ public class MainActivity extends AppCompatActivity {
         hpTV = findViewById(R.id.hpTV);
         attackTV = findViewById(R.id.attackTV);
         defenseTV = findViewById(R.id.defenseTV);
+        levelTV = findViewById(R.id.levelTV);
+        genderTV = findViewById(R.id.genderTV);
 
         normalColor = numberTV.getCurrentTextColor();
 
@@ -98,6 +102,7 @@ public class MainActivity extends AppCompatActivity {
     }
     private void reset()
     {
+        clearErrors();
         numberET.setText("777");
         nameET.setText("Pikachu");
         speciesEt.setText("Mouse Pokemon");
@@ -118,6 +123,8 @@ public class MainActivity extends AppCompatActivity {
 
     private void save()
     {
+        clearErrors();
+
         String number = numberET.getText().toString().trim();
         String name = nameET.getText().toString().trim();
         String species = speciesEt.getText().toString().trim();
@@ -127,11 +134,47 @@ public class MainActivity extends AppCompatActivity {
         String attack = attackET.getText().toString().trim();
         String defense = defenseET.getText().toString().trim();
 
-        String level = (levelSpinner.getSelectedItem() != null) ? levelSpinner.getSelectedItem().toString() : "";
+        ArrayList<String> errors = new ArrayList<>();
+
+        if(TextUtils.isEmpty(number)) {errors.add("National Number is required");
+        numberTV.setTextColor(Color.RED);}
+        if(TextUtils.isEmpty(name)) {errors.add("Name is required");
+        nameTV.setTextColor(Color.RED);}
+        if(TextUtils.isEmpty(species)) {errors.add("Species is required");
+        speciesTV.setTextColor(Color.RED);}
+        if(TextUtils.isEmpty(height)) {errors.add("Height is required");
+        heightTV.setTextColor(Color.RED);}
+        if(TextUtils.isEmpty(weight)) {errors.add("Weight is required");
+        weightTV.setTextColor(Color.RED);}
+        if(TextUtils.isEmpty(hp)) {errors.add("HP is required");
+        hpTV.setTextColor(Color.RED);}
+        if(TextUtils.isEmpty(attack)) {errors.add("Attack is required");
+        attackTV.setTextColor(Color.RED);}
+        if(TextUtils.isEmpty(defense)) {errors.add("Defense is required");
+        defenseTV.setTextColor(Color.RED);}
+
+
+        boolean male = maleButton.isChecked();
+        boolean female = femaleButton.isChecked();
+
+        if(!male && !female)
+        {
+        errors.add("Gender must be Male or Female");
+        genderTV.setTextColor(Color.RED);
+        }
+
+        if(errors.isEmpty())
+        {
+            Toast.makeText(this, "Stored in database", Toast.LENGTH_SHORT).show();
+        } else
+        {
+            Toast.makeText(this,TextUtils.join("\n", errors), Toast.LENGTH_LONG).show();
+        }
+        /*String level = (levelSpinner.getSelectedItem() != null) ? levelSpinner.getSelectedItem().toString() : "";
 
         String gender = unkButton.isChecked() ? "Unknown" : maleButton.isChecked() ? "Male" : femaleButton.isChecked() ? "Female" : "";
 
-        Toast.makeText(this, "Stored in database", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Stored in database", Toast.LENGTH_SHORT).show();*/
     }
 
     private void clearErrors()
