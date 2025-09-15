@@ -6,6 +6,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -24,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
     private RadioButton maleButton, unkButton, femaleButton;
     private Button resetButton;
     private Button saveButton;
+    private TextView numberTV, nameTV, speciesTV, heightTV, weightTV, levelTV, genderTV, hpTV, attackTV, defenseTV;
+    private int normalColor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +52,22 @@ public class MainActivity extends AppCompatActivity {
         resetButton = findViewById(R.id.resetButton);
         saveButton = findViewById(R.id.saveButton);
         saveButton.setOnClickListener(v -> save());
+
+        numberTV = findViewById(R.id.numberTV);
+        nameTV = findViewById(R.id.nameTV);
+        speciesTV = findViewById(R.id.speicesTV);
+        heightTV = findViewById(R.id.heightTV);
+        weightTV = findViewById(R.id.weightTV);
+        hpTV = findViewById(R.id.hpTV);
+        attackTV = findViewById(R.id.attackTV);
+        defenseTV = findViewById(R.id.defenseTV);
+
+        normalColor = numberTV.getCurrentTextColor();
+
+
+
+
+
 
 
 
@@ -114,4 +133,5 @@ public class MainActivity extends AppCompatActivity {
 
         Toast.makeText(this, "Stored in database", Toast.LENGTH_SHORT).show();
     }
+
 }
