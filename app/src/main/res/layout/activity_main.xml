@@ -315,7 +315,7 @@
         android:layout_height="39dp"
         android:layout_marginTop="18dp"
         android:layout_marginEnd="7dp"
-        android:text="Female"
+        android:text="@string/female"
         app:layout_constraintEnd_toStartOf="@+id/maleButton"
         app:layout_constraintTop_toBottomOf="@+id/speicesET" />
 

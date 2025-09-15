@@ -17,4 +17,5 @@
     <string name="defense">Defense</string>
     <string name="male">Male</string>
     <string name="unk">Unk</string>
+    <string name="female">Female</string>
 </resources>

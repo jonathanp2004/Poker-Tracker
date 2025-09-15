@@ -6,6 +6,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -47,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
 
         resetButton = findViewById(R.id.resetButton);
         saveButton = findViewById(R.id.saveButton);
+        saveButton.setOnClickListener(v -> save());
 
 
 
@@ -97,6 +99,19 @@ public class MainActivity extends AppCompatActivity {
 
     private void save()
     {
+        String number = numberET.getText().toString().trim();
+        String name = nameET.getText().toString().trim();
+        String species = speciesEt.getText().toString().trim();
+        String height = heightET.getText().toString().trim();
+        String weight = weightET.getText().toString().trim();
+        String hp = hpET.getText().toString().trim();
+        String attack = attackET.getText().toString().trim();
+        String defense = defenseET.getText().toString().trim();
 
+        String level = (levelSpinner.getSelectedItem() != null) ? levelSpinner.getSelectedItem().toString() : "";
+
+        String gender = unkButton.isChecked() ? "Unknown" : maleButton.isChecked() ? "Male" : femaleButton.isChecked() ? "Female" : "";
+
+        Toast.makeText(this, "Stored in database", Toast.LENGTH_SHORT).show();
     }
 }
