@@ -69,16 +69,6 @@ public class MainActivity extends AppCompatActivity {
         normalColor = numberTV.getCurrentTextColor();
 
 
-
-
-
-
-
-
-
-
-
-
         ArrayList<String> lvls = new ArrayList<>();
         for(int i =1; i<=50; i++) lvls.add(String.valueOf(i));
         ArrayAdapter<String> levelAdapter = new ArrayAdapter<>(
@@ -162,6 +152,104 @@ public class MainActivity extends AppCompatActivity {
         errors.add("Gender must be Male or Female");
         genderTV.setTextColor(Color.RED);
         }
+        //Name check
+        if(!TextUtils.isEmpty(name))
+        {
+            if(name.length() < 3 || name.length() > 12)
+            {
+                errors.add("Name must be 3-12 characters");
+                nameTV.setTextColor(Color.RED);
+            } else if (!isLetters(name))
+            {
+                errors.add("Name must only contain letters");
+                nameTV.setTextColor(Color.RED);
+            }
+        }
+        //name check
+
+        if(!TextUtils.isEmpty(number))
+        {
+            Integer num = readInt(numberET);
+            if(num == null)
+            {
+                errors.add("National Number must be an integer");
+                numberTV.setTextColor(Color.RED);
+            }else if (num < 1 || num > 1010){
+                errors.add("National Number must be 1-1010");
+                numberTV.setTextColor(Color.RED);
+            }
+        }
+//height check
+        if(!TextUtils.isEmpty(height))
+        {
+            Double h = readDouble(heightET);
+            if(h == null)
+            {
+                errors.add("Height must be a number");
+                heightTV.setTextColor(Color.RED);
+            }else if (h <0.20 || h > 169.99)
+            {
+                errors.add("Height must be 0.20-169.99");
+                heightTV.setTextColor(Color.RED);
+            }
+
+        }
+        //weight check
+        if(!TextUtils.isEmpty(weight))
+        {
+            Double w = readDouble(weightET);
+            if(w == null)
+            {
+                errors.add("Weight must be a number");
+                weightTV.setTextColor(Color.RED);
+            } else if (w <0.10 || w > 992.7)
+            {
+                errors.add("Weight must be 0.10-992.7");
+                weightTV.setTextColor(Color.RED);
+            }
+        }
+        //hp check
+        if(!TextUtils.isEmpty(hp))
+        {
+            Integer hpp = readInt(hpET);
+            if(hpp == null)
+            {
+                errors.add("HP must be an integer");
+                hpTV.setTextColor(Color.RED);
+            } else if (hpp <1 || hpp > 362)
+            {
+                errors.add("HP must be 1-362");
+                hpTV.setTextColor(Color.RED);
+            }
+        }
+        //attack check
+        if(!TextUtils.isEmpty(attack))
+        {
+            Integer att = readInt(attackET);
+            if(att == null)
+            {
+                errors.add("Attack must be an integer");
+                attackTV.setTextColor(Color.RED);
+            } else if (att <0 || att > 526)
+            {
+                errors.add("Attack must be 0-526");
+                attackTV.setTextColor(Color.RED);
+            }
+        }
+        //defense check
+        if(!TextUtils.isEmpty(defense))
+        {
+            Integer def = readInt(defenseET);
+            if(def == null)
+            {
+                errors.add("Defense must be an integer");
+                defenseTV.setTextColor(Color.RED);
+            } else if (def <10 || def > 614)
+            {
+                errors.add("Defense must be 10-614");
+                defenseTV.setTextColor(Color.RED);
+            }
+        }
 
         if(errors.isEmpty())
         {
@@ -170,71 +258,10 @@ public class MainActivity extends AppCompatActivity {
         {
             Toast.makeText(this,TextUtils.join("\n", errors), Toast.LENGTH_LONG).show();
         }
-        //national number required, integer 1-1010
-        Integer num = readInt(numberET);
-        if(num == null)
-        {
-            errors.add("National Number must be an integer");
-            numberTV.setTextColor(Color.RED);
-        }else if (num < 1 || num > 1010){
-            errors.add("National Number must be 1-1010");
-            numberTV.setTextColor(Color.RED);
-        }
-        //height required, double 0.20-169.99
-        Double h = readDouble(heightET);
-        if(h == null)
-        {
-            errors.add("Height must be a number");
-            heightTV.setTextColor(Color.RED);
-        } else if (h <0.20 || h > 169.99)
-        {
-            errors.add("Height must be 0.20-169.99");
-            heightTV.setTextColor(Color.RED);
-        }
-        //weight required, double 0.10-992.7
-        Double w = readDouble(weightET);
-        if(w == null)
-        {
-            errors.add("Weight must be a number");
-            weightTV.setTextColor(Color.RED);
-        } else if (w <0.10 || w > 992.7)
-        {
-            errors.add("Weight must be 0.10-992.7");
-            weightTV.setTextColor(Color.RED);
-        }
-        //hp required, integer 1-362
-        Integer hpp = readInt(hpET);
-        if(hpp == null)
-        {
-            errors.add("HP must be an integer");
-            hpTV.setTextColor(Color.RED);
-        } else if (hpp <1 || hpp > 362)
-        {
-            errors.add("HP must be 1-362");
-            hpTV.setTextColor(Color.RED);
-        }
-        //attack required, integer 0-526
-        Integer att = readInt(attackET);
-        if(att == null)
-        {
-            errors.add("Attack must be an integer");
-            attackTV.setTextColor(Color.RED);
-        } else if (att <0 || att > 526)
-        {
-            errors.add("Attack must be 0-526");
-            attackTV.setTextColor(Color.RED);
-        }
-        //defense required, integer 0.10-992.7
-        Integer def = readInt(defenseET);
-        if(def == null)
-        {
-            errors.add("Defense must be an integer");
-            defenseTV.setTextColor(Color.RED);
-        } else if (def <0 || def > 526)
-        {
-            errors.add("Defense must be 0-526");
-            defenseTV.setTextColor(Color.RED);
-        }
+
+
+
+
         if(errors.isEmpty())
         {
             Toast.makeText(this, "Stored in database", Toast.LENGTH_SHORT).show();
@@ -278,5 +305,28 @@ public class MainActivity extends AppCompatActivity {
         try{return Double.parseDouble(s);}
         catch (NumberFormatException e) {return null;}
     }
+
+    private boolean isLetters(String s)
+    {
+        if(s==null) return false;
+        for(int i =0; i<s.length(); i++)
+        {
+            char c = s.charAt(i);
+            if(!Character.isLetter(c)) return false;
+        }
+        return true;
+    }
+
+    private boolean isLandS(String s)
+    {
+        if(s==null) return false;
+        for(int i =0; i<s.length(); i++)
+        {
+            char c = s.charAt(i);
+            if(!Character.isLetter(c) && c != ' ') return false;
+        }
+        return true;
+    }
+
 
 }
