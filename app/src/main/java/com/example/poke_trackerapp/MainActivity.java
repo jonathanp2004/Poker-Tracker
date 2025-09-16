@@ -177,7 +177,7 @@ public class MainActivity extends AppCompatActivity {
             {
                 errors.add("National Number must be an integer");
                 numberTV.setTextColor(Color.RED);
-            }else if (num < 1 || num > 1010){
+            }else if (num < 0 || num > 1010){
                 errors.add("National Number must be 1-1010");
                 numberTV.setTextColor(Color.RED);
             }
@@ -324,6 +324,22 @@ public class MainActivity extends AppCompatActivity {
             if(!Character.isLetter(c) && c != ' ') return false;
         }
         return true;
+    }
+
+    private boolean isNameCharsValid(String s)
+    {
+        return s != null && s.matches("[a-zA-Z]+");
+    }
+
+    private boolean isSpeciesCharsValid(String s)
+    {
+        return s != null && s.matches("[a-zA-Z ]+");
+    }
+
+    private String toTitleCase(String s)
+    {
+        if (s == null || s.isEmpty()) return s;
+        return Character.toUpperCase(s.charAt(0)) + s.substring(1).toLowerCase();
     }
 
 
