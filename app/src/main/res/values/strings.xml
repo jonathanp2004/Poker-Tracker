@@ -16,6 +16,6 @@
     <string name="reset">Reset</string>
     <string name="defense">Defense</string>
     <string name="male">Male</string>
-    <string name="unk">Unk</string>
+    <string name="unk">Unknown</string>
     <string name="female">Female</string>
 </resources>
