@@ -11,6 +11,21 @@
         android:orientation="vertical"
         android:padding="16dp">
 
+        <TextView
+            android:id="@+id/pokeHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/poke_tracker"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/registerSub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register_new_catch"
+            android:textSize="12sp" />
+
+
 
 
 
