@@ -13,20 +13,24 @@
 
         <TextView
             android:id="@+id/pokeHeader"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/poke_tracker"
+            android:textAlignment="center"
             android:textSize="23sp"
             android:textStyle="bold" />
+
         <TextView
             android:id="@+id/registerSub"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/register_new_catch"
+            android:textAlignment="center"
             android:textSize="12sp" />
+
         <TextView
             android:id="@+id/numberTV"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/national_number"
             android:textSize="14sp" />
@@ -37,9 +41,10 @@
             android:inputType="number"
             android:ems="10"
             android:textSize="16sp" />
+
         <TextView
             android:id="@+id/nameTV"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/name"
             android:textSize="14sp" />
@@ -50,9 +55,10 @@
             android:inputType="text"
             android:ems="10"
             android:textSize="16sp" />
+
         <TextView
             android:id="@+id/speicesTV"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/species"
             android:textSize="14sp" />
@@ -63,9 +69,10 @@
             android:inputType="text"
             android:ems="10"
             android:textSize="16sp" />
+
         <TextView
             android:id="@+id/genderTV"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/gender"
             android:textSize="16sp" />
@@ -94,7 +101,7 @@
 
         <TextView
             android:id="@+id/heightTV"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/height"
             android:textSize="16sp" />
@@ -106,6 +113,7 @@
             android:inputType="numberDecimal"
             android:ems="10"
             android:textSize="16sp" />
+
         <TextView
             android:id="@+id/weightTV"
             android:layout_width="wrap_content"
@@ -131,6 +139,71 @@
             android:id="@+id/levelSpinner"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/baseTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/base_stats"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/hpTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hp"
+            android:textSize="16sp" />
+        <EditText
+            android:id="@+id/hpET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/attackTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/attack"
+            android:textSize="16sp" />
+        <EditText
+            android:id="@+id/attackET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/defenseTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/defense"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/defenseET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textSize="16sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/resetButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/reset" />
+
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/save" />
+        </LinearLayout>
 
 
 
