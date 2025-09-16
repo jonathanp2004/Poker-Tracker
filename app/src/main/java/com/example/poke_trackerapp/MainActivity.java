@@ -146,12 +146,15 @@ public class MainActivity extends AppCompatActivity {
 
         boolean male = maleButton.isChecked();
         boolean female = femaleButton.isChecked();
+        boolean unk = unkButton.isChecked();
 
-        if(!male && !female)
+
+        if (!male && !female && !unk)
         {
-        errors.add("Gender must be Male or Female");
+        errors.add("Select Gender");
         genderTV.setTextColor(Color.RED);
         }
+
         //Name check
         if(!TextUtils.isEmpty(name))
         {
@@ -178,6 +181,12 @@ public class MainActivity extends AppCompatActivity {
                 errors.add("National Number must be 1-1010");
                 numberTV.setTextColor(Color.RED);
             }
+        }
+        //species check
+        if(!TextUtils.isEmpty(species)&& !isLandS(species))
+        {
+            errors.add("Species must only contain letters and spaces");
+            speciesTV.setTextColor(Color.RED);
         }
 //height check
         if(!TextUtils.isEmpty(height))
@@ -250,17 +259,6 @@ public class MainActivity extends AppCompatActivity {
                 defenseTV.setTextColor(Color.RED);
             }
         }
-
-        if(errors.isEmpty())
-        {
-            Toast.makeText(this, "Stored in database", Toast.LENGTH_SHORT).show();
-        } else
-        {
-            Toast.makeText(this,TextUtils.join("\n", errors), Toast.LENGTH_LONG).show();
-        }
-
-
-
 
         if(errors.isEmpty())
         {
