@@ -170,23 +170,28 @@ public class MainActivity extends AppCompatActivity {
         }
         //name check
 
-        if(!TextUtils.isEmpty(number))
-        {
-            Integer num = readInt(numberET);
-            if(num == null)
-            {
-                errors.add("National Number must be an integer");
-                numberTV.setTextColor(Color.RED);
-            }else if (num < 0 || num > 1010){
-                errors.add("National Number must be 1-1010");
-                numberTV.setTextColor(Color.RED);
+        if (!TextUtils.isEmpty(name)) {
+            if (name.length() < 3 || name.length() > 12) {
+                errors.add("Name must be 3–12 characters");
+                nameTV.setTextColor(Color.RED);
+            } else if (!isNameCharsValid(name)) {
+                errors.add("Name may contain only letters, dots, and spaces");
+                nameTV.setTextColor(Color.RED);
+            } else {
+                String fixed = toTitleCase(name);
+                if (!fixed.equals(name)) nameET.setText(fixed);
             }
         }
+
         //species check
-        if(!TextUtils.isEmpty(species)&& !isLandS(species))
-        {
-            errors.add("Species must only contain letters and spaces");
-            speciesTV.setTextColor(Color.RED);
+        if (!TextUtils.isEmpty(species)) {
+            if (!isSpeciesCharsValid(species)) {
+                errors.add("Species may contain only letters and spaces");
+                speciesTV.setTextColor(Color.RED);
+            } else {
+                String fixed = toTitleCase(species);
+                if (!fixed.equals(species)) speciesEt.setText(fixed);
+            }
         }
 //height check
         if(!TextUtils.isEmpty(height))
