@@ -170,6 +170,79 @@ public class MainActivity extends AppCompatActivity {
         {
             Toast.makeText(this,TextUtils.join("\n", errors), Toast.LENGTH_LONG).show();
         }
+        //national number required, integer 1-1010
+        Integer num = readInt(numberET);
+        if(num == null)
+        {
+            errors.add("National Number must be an integer");
+            numberTV.setTextColor(Color.RED);
+        }else if (num < 1 || num > 1010){
+            errors.add("National Number must be 1-1010");
+            numberTV.setTextColor(Color.RED);
+        }
+        //height required, double 0.20-169.99
+        Double h = readDouble(heightET);
+        if(h == null)
+        {
+            errors.add("Height must be a number");
+            heightTV.setTextColor(Color.RED);
+        } else if (h <0.20 || h > 169.99)
+        {
+            errors.add("Height must be 0.20-169.99");
+            heightTV.setTextColor(Color.RED);
+        }
+        //weight required, double 0.10-992.7
+        Double w = readDouble(weightET);
+        if(w == null)
+        {
+            errors.add("Weight must be a number");
+            weightTV.setTextColor(Color.RED);
+        } else if (w <0.10 || w > 992.7)
+        {
+            errors.add("Weight must be 0.10-992.7");
+            weightTV.setTextColor(Color.RED);
+        }
+        //hp required, integer 1-362
+        Integer hpp = readInt(hpET);
+        if(hpp == null)
+        {
+            errors.add("HP must be an integer");
+            hpTV.setTextColor(Color.RED);
+        } else if (hpp <1 || hpp > 362)
+        {
+            errors.add("HP must be 1-362");
+            hpTV.setTextColor(Color.RED);
+        }
+        //attack required, integer 0-526
+        Integer att = readInt(attackET);
+        if(att == null)
+        {
+            errors.add("Attack must be an integer");
+            attackTV.setTextColor(Color.RED);
+        } else if (att <0 || att > 526)
+        {
+            errors.add("Attack must be 0-526");
+            attackTV.setTextColor(Color.RED);
+        }
+        //defense required, integer 0.10-992.7
+        Integer def = readInt(defenseET);
+        if(def == null)
+        {
+            errors.add("Defense must be an integer");
+            defenseTV.setTextColor(Color.RED);
+        } else if (def <0 || def > 526)
+        {
+            errors.add("Defense must be 0-526");
+            defenseTV.setTextColor(Color.RED);
+        }
+        if(errors.isEmpty())
+        {
+            Toast.makeText(this, "Stored in database", Toast.LENGTH_SHORT).show();
+        } else
+        {
+            Toast.makeText(this,TextUtils.join("\n", errors), Toast.LENGTH_LONG).show();
+        }
+
         /*String level = (levelSpinner.getSelectedItem() != null) ? levelSpinner.getSelectedItem().toString() : "";
 
         String gender = unkButton.isChecked() ? "Unknown" : maleButton.isChecked() ? "Male" : femaleButton.isChecked() ? "Female" : "";
