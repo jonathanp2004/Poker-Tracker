@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
 
         femaleButton = findViewById(R.id.femaleButton);
         maleButton = findViewById(R.id.maleButton);
-        unkButton = findViewById(R.id.unkButton);
+        unkButton = findViewById(R.id.unknownButton);
 
         resetButton = findViewById(R.id.resetButton);
         saveButton = findViewById(R.id.saveButton);
@@ -322,16 +322,7 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
-    private boolean isLandS(String s)
-    {
-        if(s==null) return false;
-        for(int i =0; i<s.length(); i++)
-        {
-            char c = s.charAt(i);
-            if(!Character.isLetter(c) && c != ' ') return false;
-        }
-        return true;
-    }
+
 
     private boolean isNameCharsValid(String s)
     {

@@ -15,25 +15,25 @@
         tools:context=".MainActivity">
 
 
-    <RadioButton
-        android:id="@+id/maleButton"
-        android:layout_width="79dp"
-        android:layout_height="39dp"
-        android:layout_marginTop="18dp"
-        android:layout_marginEnd="9dp"
-        android:text="@string/male"
-        app:layout_constraintEnd_toStartOf="@+id/unkButton"
-        app:layout_constraintTop_toBottomOf="@+id/speicesET" />
+        <RadioButton
+            android:id="@+id/maleButton"
+            android:layout_width="79dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="9dp"
+            android:text="@string/male"
+            app:layout_constraintEnd_toStartOf="@+id/unkButton"
+            app:layout_constraintTop_toBottomOf="@+id/speicesET" />
 
-    <RadioButton
-        android:id="@+id/unkButton"
-        android:layout_width="79dp"
-        android:layout_height="39dp"
-        android:layout_marginTop="18dp"
-        android:layout_marginEnd="4dp"
-        android:text="@string/unk"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/speicesET" />
+        <RadioButton
+            android:id="@+id/unkButton"
+            android:layout_width="79dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="4dp"
+            android:text="@string/unk"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/speicesET" />
 
         <RadioButton
             android:id="@+id/femaleButton"
@@ -45,287 +45,287 @@
             app:layout_constraintEnd_toStartOf="@+id/maleButton"
             app:layout_constraintTop_toBottomOf="@+id/speicesET" />
 
-    <EditText
-        android:id="@+id/defenseET"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="26dp"
-        android:layout_marginEnd="56dp"
-        android:ems="10"
-        android:inputType="number"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/attackET" />
+        <EditText
+            android:id="@+id/defenseET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:layout_marginEnd="56dp"
+            android:ems="10"
+            android:inputType="number"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/attackET" />
 
-    <EditText
-        android:id="@+id/attackET"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="55dp"
-        android:ems="10"
-        android:inputType="number"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/hpET" />
+        <EditText
+            android:id="@+id/attackET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="55dp"
+            android:ems="10"
+            android:inputType="number"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hpET" />
 
-    <TextView
-        android:id="@+id/defenseTV"
-        android:layout_width="68dp"
-        android:layout_height="26dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="40dp"
-        android:text="@string/defense"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/attackTV" />
+        <TextView
+            android:id="@+id/defenseTV"
+            android:layout_width="68dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/defense"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/attackTV" />
 
-    <TextView
-        android:id="@+id/attackTV"
-        android:layout_width="48dp"
-        android:layout_height="28dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="40dp"
-        android:text="@string/attack"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/hpTV" />
+        <TextView
+            android:id="@+id/attackTV"
+            android:layout_width="48dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/attack"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hpTV" />
 
-    <TextView
-        android:id="@+id/hpTV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="18dp"
-        android:text="@string/hp"
-        android:textAlignment="viewStart"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/baseTV" />
+        <TextView
+            android:id="@+id/hpTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="18dp"
+            android:text="@string/hp"
+            android:textAlignment="viewStart"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/baseTV" />
 
-    <EditText
-        android:id="@+id/heightET"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="52dp"
-        android:ems="10"
-        android:inputType="numberDecimal"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/maleButton" />
+        <EditText
+            android:id="@+id/heightET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="52dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/maleButton" />
 
-    <EditText
-        android:id="@+id/weightET"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="52dp"
-        android:ems="10"
-        android:inputType="numberDecimal"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/heightET" />
+        <EditText
+            android:id="@+id/weightET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="52dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/heightET" />
 
-    <EditText
-        android:id="@+id/hpET"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="81dp"
-        android:layout_marginEnd="56dp"
-        android:ems="10"
-        android:inputType="number"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/levelSpinner" />
+        <EditText
+            android:id="@+id/hpET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="81dp"
+            android:layout_marginEnd="56dp"
+            android:ems="10"
+            android:inputType="number"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/levelSpinner" />
 
-    <EditText
-        android:id="@+id/speicesET"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="57dp"
-        android:ems="10"
-        android:inputType="text"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nameET" />
+        <EditText
+            android:id="@+id/speicesET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="57dp"
+            android:ems="10"
+            android:inputType="text"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nameET" />
 
-    <TextView
-        android:id="@+id/genderTV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="40dp"
-        android:text="@string/gender"
-        android:textAlignment="viewStart"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/speicesTV" />
+        <TextView
+            android:id="@+id/genderTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/gender"
+            android:textAlignment="viewStart"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/speicesTV" />
 
-    <TextView
-        android:id="@+id/heightTV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="40dp"
-        android:text="@string/height"
-        android:textAlignment="viewStart"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/genderTV" />
+        <TextView
+            android:id="@+id/heightTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/height"
+            android:textAlignment="viewStart"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/genderTV" />
 
-    <TextView
-        android:id="@+id/weightTV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="40dp"
-        android:text="@string/weight"
-        android:textAlignment="viewStart"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/heightTV" />
+        <TextView
+            android:id="@+id/weightTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/weight"
+            android:textAlignment="viewStart"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/heightTV" />
 
-    <TextView
-        android:id="@+id/speicesTV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="40dp"
-        android:text="@string/species"
-        android:textAlignment="viewStart"
-        android:textSize="14sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nameTV" />
+        <TextView
+            android:id="@+id/speicesTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/species"
+            android:textAlignment="viewStart"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nameTV" />
 
-    <TextView
-        android:id="@+id/nameTV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="40dp"
-        android:text="@string/name"
-        android:textAlignment="viewStart"
-        android:textSize="14sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/numberTV" />
+        <TextView
+            android:id="@+id/nameTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/name"
+            android:textAlignment="viewStart"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/numberTV" />
 
-    <TextView
-        android:id="@+id/pokeHeader"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/poke_tracker"
-        android:textSize="23sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/pokeHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/poke_tracker"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/registerSub"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="7dp"
-        android:text="@string/register_new_catch"
-        android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="@+id/pokeHeader"
-        app:layout_constraintStart_toStartOf="@+id/pokeHeader"
-        app:layout_constraintTop_toBottomOf="@+id/pokeHeader" />
+        <TextView
+            android:id="@+id/registerSub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:text="@string/register_new_catch"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/pokeHeader"
+            app:layout_constraintStart_toStartOf="@+id/pokeHeader"
+            app:layout_constraintTop_toBottomOf="@+id/pokeHeader" />
 
-    <TextView
-        android:id="@+id/numberTV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="62dp"
-        android:text="@string/national_number"
-        android:textAlignment="viewStart"
-        android:textSize="14sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pokeHeader" />
+        <TextView
+            android:id="@+id/numberTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="62dp"
+            android:text="@string/national_number"
+            android:textAlignment="viewStart"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pokeHeader" />
 
-    <EditText
-        android:id="@+id/numberET"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="56dp"
-        android:ems="10"
-        android:inputType="number"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/registerSub" />
+        <EditText
+            android:id="@+id/numberET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="56dp"
+            android:ems="10"
+            android:inputType="number"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/registerSub" />
 
-    <EditText
-        android:id="@+id/nameET"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="57dp"
-        android:ems="10"
-        android:inputType="text"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/numberET" />
+        <EditText
+            android:id="@+id/nameET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="57dp"
+            android:ems="10"
+            android:inputType="text"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/numberET" />
 
-    <TextView
-        android:id="@+id/levelTV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="333dp"
-        android:text="@string/level"
-        android:textAlignment="viewStart"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.266"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/weightTV" />
+        <TextView
+            android:id="@+id/levelTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="333dp"
+            android:text="@string/level"
+            android:textAlignment="viewStart"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.266"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/weightTV" />
 
-    <Spinner
-        android:id="@+id/levelSpinner"
-        android:layout_width="160dp"
-        android:layout_height="18dp"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="56dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/weightET" />
+        <Spinner
+            android:id="@+id/levelSpinner"
+            android:layout_width="160dp"
+            android:layout_height="18dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="56dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/weightET" />
 
-    <TextView
-        android:id="@+id/baseTV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="44dp"
-        android:text="@string/base_stats"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/levelTV" />
+        <TextView
+            android:id="@+id/baseTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="44dp"
+            android:text="@string/base_stats"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/levelTV" />
 
-    <Button
-        android:id="@+id/saveButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="44dp"
-        android:text="@string/save"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/defenseET" />
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="44dp"
+            android:text="@string/save"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/defenseET" />
 
-    <Button
-        android:id="@+id/resetButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="12dp"
-        android:text="@string/reset"
-        app:layout_constraintEnd_toStartOf="@+id/saveButton"
-        app:layout_constraintTop_toBottomOf="@+id/defenseET" />
+        <Button
+            android:id="@+id/resetButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="12dp"
+            android:text="@string/reset"
+            app:layout_constraintEnd_toStartOf="@+id/saveButton"
+            app:layout_constraintTop_toBottomOf="@+id/defenseET" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-    </ScrollView>
+</ScrollView>
